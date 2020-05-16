@@ -1,7 +1,8 @@
 #include "library.h"
 
-#include <stdio.h>
+#include <avr/io.h>
 
-void hello(void) {
-    printf("Hello, World!\n");
+void hello()
+{
+    PORTB ^= (1 << PORTB5);
 }
