@@ -10,7 +10,6 @@
 
 #include <avr/io.h>
 
-void hello(void);
 
 struct mled_Color
 {

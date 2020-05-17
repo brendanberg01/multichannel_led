@@ -7,11 +7,6 @@
 
 #include "multichannel_led.h"
 
-void hello()
-{
-    PORTB ^= (1 << PORTB5);
-}
-
 
 void mled_init(mled_Channel* channels, uint8_t channel_num)
 {
