@@ -22,4 +22,18 @@ struct mled_Color
 typedef struct mled_Color mled_Color;
 
 
+struct mled_Channel
+{
+    volatile uint8_t* ddr;
+    volatile uint8_t* port;
+    uint8_t bit;
+
+    uint16_t start_index;
+    uint16_t led_num;
+    int8_t direction;
+};
+
+typedef struct mled_Channel mled_Channel;
+
+
 #endif //MULTICHANNEL_LED_MULTICHANNEL_LED_H
