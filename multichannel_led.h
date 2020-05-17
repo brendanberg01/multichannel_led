@@ -36,4 +36,7 @@ struct mled_Channel
 typedef struct mled_Channel mled_Channel;
 
 
+void mled_init(mled_Channel* channels, uint8_t chanel_num);
+
+
 #endif //MULTICHANNEL_LED_MULTICHANNEL_LED_H

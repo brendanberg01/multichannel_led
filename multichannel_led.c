@@ -11,3 +11,12 @@ void hello()
 {
     PORTB ^= (1 << PORTB5);
 }
+
+
+void mled_init(mled_Channel* channels, uint8_t channel_num)
+{
+    for (register uint8_t i = 0u; i < channel_num; ++i)
+    {
+        *channels[i].ddr |= (1u << channels[i].bit);
+    }
+}
