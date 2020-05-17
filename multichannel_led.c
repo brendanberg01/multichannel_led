@@ -1,11 +1,11 @@
 /*
- * file: library.c
+ * file: multichannel_led.c
  * author: Brendan Berg
  * MIT License
  * Copyright (c) 2020 Brendan Berg
  */
 
-#include "library.h"
+#include "multichannel_led.h"
 
 #include <avr/io.h>
 

@@ -21,6 +21,6 @@ endif(NOT HAS_PARENT)
 # project files
 ###############################################################################
 add_avr_library(multichannel_led
-        library.c
-        library.h
+        multichannel_led.c
+        multichannel_led.h
 )
