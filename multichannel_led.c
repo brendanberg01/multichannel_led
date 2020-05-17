@@ -14,4 +14,20 @@ void mled_init(mled_Channel* channels, uint8_t channel_num)
     {
         *channels[i].ddr |= (1u << channels[i].bit);
     }
+
+    // TODO: timer setup
+}
+
+
+void mled_transmission_start(mled_Channel* channels, uint8_t channel_num, mled_Color* colors)
+{
+    // TODO: invoke interrupt series
+    // TODO: remove placeholder code
+    for (register uint8_t i = 0u; i < channel_num; ++i)
+    {
+        *channels[i].port &= ~(1u << channels[i].bit);
+    }
+
+    uint8_t filler = colors[0].green;
+    colors[0].green = filler;
 }
